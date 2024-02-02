@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMDC-PULWARA College - Faculty</title>
+    <meta name="description" content="Meet the dedicated faculty members at GMDC-PULWARA College. Learn about their expertise in Arts, Science, and more.">
+    <link rel="icon" href="logo.jpg" type="image/png">
+
+    <!-- Stylesheets -->
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="GMDC-PULWARA, College, Faculty, Arts, Science, Lalitpur, Uttar Pradesh">
+    <meta name="author" content="GMDC-PULWARA">
+    <meta name="robots" content="index, follow">
+</head>
+
+<body>
+    <style>
+        .sub-header{
+            background-image: url(students.jpg);
+        }
+       
+        .sub-header-image-2{
+            background-image: url(back1.jpg);
+        }
+      
+    </style>
+    <section class="sub-header sub-header-image-2">
+        <nav>
+            <a href="index.html"><img src="logo.jpg" style="border-radius: 50%; width: 100%;" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="faculty.html">FACULTY</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Faculty/</h1>
+    </section>
+      <style>
+       
+        .narendra{
+            outline: 2px solid coral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(9, 9, 121);
+            margin-top: 100px;
+            width: 1000px;
+            height: 100px;
+            border-style: double;
+            border-style:dashed;
+            
+        }
+        .narendra img{
+
+            border-radius: 50%; width: 8%;
+        }
+        .narend{
+            font-weight: bolder;
+            color: white;
+        }
+        @media (max-width: 700px){
+            .narendra img{
+                margin-right: 0px;
+                width: 40%;
+            }
+            .narend{
+                margin-right: 10px;
+            }
+            .narendra{
+                width: 255px;
+                height: 150px;
+            }
+            
+        }
+      </style>
+      <h1 class="staff" style="color: darkblue;
+      font-weight: 900;
+      font-size: 5.5rem; display:flex; justify-content:center; align-items:center;">Our Staff</h1>
+      <section class="fac">
+       <div class="narendra">
+        <img src="narendra.jpg" alt="Person-Photo">
+       <p class="narend">Dr. Narendra Pratap Singh Yadav <br>
+        PRINCIPAL <br>
+        Subject- Arts (History)</p> 
+       </div>
+    </section>
+    <section class="fac">
+        <div class="narendra">
+         <img  src="sunil.PNG" alt="Person-Photo">
+        <p class="narend">Dr. Sunil Kumar Surothiya<br>
+         ASSISTANT PROFESSOR <br>
+         Subject- Arts (Political Science)</p> 
+        </div>
+     </section>
+     <section class="fac">
+        <div class="narendra">
+         <img  src="vinita.png" alt="Person-Photo">
+        <p class="narend">Dr. Vinita Ahirwar<br>
+         ASSISTANT PROFESSOR <br>
+         Subject- Science (Zoology)</p> 
+        </div>
+     </section>
+     <section class="fac">
+        <div class="narendra">
+         <img src="pratima.PNG" alt="Person-Photo">
+        <p class="narend">Dr. Pratima Singh<br>
+         ASSISTANT PROFESSOR <br>
+         Subject- Arts (Hindi)</p> 
+        </div>
+     </section>
+     <section class="footer">
+        <h4>About us</h4>
+        <p>
+            GMDC-PULWARA is one of the best college in Lalitpur, Uttar Pradesh.
+        </p>
+        <div class="icons">
+            <a class="plain-link" href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+            <a class="plain-link" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+            <a class="plain-link" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+            <a class="plain-link" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>
+            Made by GMDC-PULWARA
+            <br>
+            Copyright © 2024 | All Rights Reserved. <br>
+                <a class="plain-link icons-blue" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                <a class="plain-link icons-blue" href="https://github.com"><i class="fa fa-github"></i></a>
+                <a class="plain-link icons-blue" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                <a class="plain-link icons-blue" href="mailto:gmcpulwara@gmail.com"><i class="fa fa-at"></i></a>
+        </p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html> 

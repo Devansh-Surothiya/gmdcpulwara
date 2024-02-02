@@ -1,0 +1,150 @@
+
+    <!-- <section class="contact-form">
+        <h4 class="sectionHeader">contact us</h4>
+        <h1 class="heading">Get In Touch</h1>
+        <p class="para">Know our official adress, number and email. You can also Send us message using the form below,
+            we will reply your message as soon as possible.</p> -->
+
+            <!-- <form action="https://formspree.io/f/xkndovgb" method="POST"> -->
+                <!DOCTYPE html>
+                <html>
+                    <head>
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Contact Us</title>
+                        <link rel="icon" href="logo.jpg" type="image/png" style="border-radius: 50%;">
+                        <link rel="stylesheet" href="style.css">
+                        <link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    </head>
+                    <body>
+                        <style>
+                            .sub-header{
+                                background-image: url(contact-us.jpg);
+                            }
+                            @media (max-width: 700px) {
+                                .sub-header {
+                                     background-image: url(contactimg.png);
+                                   
+                                }
+                            }
+                           
+                        </style>
+                        <section class="sub-header sub-header-image-4">
+                            <nav>
+                                <a href="index.html"><img src="logo.jpg" style="border-radius: 50%;"></a>
+                                <div class="nav-links" id="navLinks">
+                                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                                    <ul>
+                                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="courses.html">COURSES</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="faculty.html">FACULTY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-bars" onclick="showMenu()"></i>
+                            </nav>
+                            <h1>Contact Us</h1>
+                        </section>
+                
+                <!-- --------Contact us content-------- -->
+                
+                <section class="location">
+                    <h1>Our Location</h1>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28958.76209147769!2d78.56847!3d24.869134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3979ca2013d3ac0d%3A0xd15f70697bfb2830!2sPulwara%2C%20Uttar%20Pradesh%20284123%2C%20India!5e0!3m2!1sen!2sus!4v1706429905538!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- <iframe src="https://www.google.com/maps/place/Pulwara,+Uttar+Pradesh+284123,+India/@24.869134,78.56847,14z/data=!4m6!3m5!1s0x3979ca2013d3ac0d:0xd15f70697bfb2830!8m2!3d24.8695898!4d78.5689242!16s%2Fg%2F12hz3j0wt?hl=en-GB&gl=US" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    </div>
+                </section>
+                
+                <section class="contact-us">
+                    <div class="row">
+                        <div class="contact-col">
+                            <h1>Our Contact Details</h1>
+                            <div>
+                                <a class="plain-link" href="https://goo.gl/maps/hnvb9MRapZumfxN3A"><i class="fa fa-home"></i></a>
+                                <a class="plain-link" href="https://goo.gl/maps/hnvb9MRapZumfxN3A">
+                                <span>
+                                    <h5>Govt. Model Degree College, </h5>
+                                    <p> Pulwara (Bar), Lalitpur (UP) 284123</p>
+                                </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="plain-link" href="tel:917122580011"><i class="fa fa-phone"></i></a>
+                                <a class="plain-link" href="tel:917122580011">
+                                <span>
+                                    <h5>05175-297421</h5>
+                                    <p>Feel free to call us for any queries.</p>
+                                </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="plain-link" href="mailto:deanadmissions@rknec.edu"><i class="fa fa-envelope-o"></i></a>
+                                <span>
+                                    <a class="plain-link" href="mailto:deanadmissions@rknec.edu">
+                                    <h5> gmcpulwara@gmail.com</h5>
+                                    <p>Email us for any queries.</p>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="contact-col">
+                            <h1>Send Message</h1>
+                            <form action="action="https://formspree.io/f/xkndovgb" id="contact-form" method="POST">
+                                <input type="text" name="Name" id="Name" placeholder="Enter your Name" required>
+                                <input type="email" name="Email" id="Email" placeholder="Enter your Email" required>
+                                <input type="text" name="Subject" id="Subject" placeholder="Enter your Subject" required>
+                                <textarea rows="8" name="Message" id="Message" placeholder="Message" required></textarea>
+                                <button type="submit" class="hero-btn red-btn submit-btn">Send Message</button>
+                            </form>
+                            <div id="status"></div>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                <!-- ------- Footer -------  -->
+                
+                <section class="footer">
+                    <h4>About us</h4>
+                    <p>
+                        GMDC-PULWARA is one of the best college in Lalitpur, Uttar Pradesh.
+                    </p>
+                    <div class="icons">
+                        <a class="plain-link" href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                        <a class="plain-link" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                        <a class="plain-link" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                        <a class="plain-link" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+                    </div>
+                    <p>
+                        Made by GMDC-PULWARA
+                        <br>
+                        Copyright © 2024 | All Rights Reserved. <br>
+                            <a class="plain-link icons-blue" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                            <a class="plain-link icons-blue" href="https://github.com"><i class="fa fa-github"></i></a>
+                            <a class="plain-link icons-blue" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                            <a class="plain-link icons-blue" href="mailto:gmcpulwara@gmail.com"><i class="fa fa-at"></i></a>
+                    </p>
+                </section>
+                
+                
+                <!-- -------------JavaScript for form submission------------ -->
+                <script src="main.js"></script>
+                
+                <!-- -------------JavaScript for toggle menu------------ -->
+                        <script>
+                            var navLinks = document.getElementById("navLinks");
+                            function showMenu(){
+                                navLinks.style.right = "0";
+                            }
+                            function hideMenu(){
+                                navLinks.style.right = "-200px";
+                            }
+                        </script>
+                
+                    </body>
+                </html>

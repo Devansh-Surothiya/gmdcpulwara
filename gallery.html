@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="logo.jpg" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Photo - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="sub-header sub-header-image-2">
+            <nav>
+                <a href="index.html"><img src="logo.jpg" style="border-radius: 50%;"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="courses.html">COURSES</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="faculty.html">FACULTY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1 class="photoo">Photo - Gallery</h1>
+        </section>
+    </header>
+    <style>
+        .photoo{
+            font-size: 3rem;
+            font-weight: bolder;
+            color: aqua;
+        }
+        .sub-header{
+            background-color: red;
+        }
+        body .header{
+            background-image: url(backImg.jpg);
+        }
+        @media (min-width: 700px){
+         .bcom{
+            margin-left: 400px;
+         }  
+        }
+        .redd{
+           color: rgb(0, 5, 71);
+        }
+    </style>
+    <div class="gallery-container">
+        <div class="gallery__item">
+            <img src="galeria1.jpg" alt="" class="gallery__img">
+            <h2 class="gallery__title"></h2>
+        </div>
+        <div class="gallery__item">
+            <img src="galeria2.jpg" alt="" class="gallery__img">
+            <h2 class="gallery__title"></h2>
+        </div>
+        <div class="gallery__item">
+            <img src="galeria3.jpg" alt="" class="gallery__img">
+            <h2 class="gallery__title"></h2>
+        </div>
+        <div class="gallery__item">
+            <img src="galeria4.jpg" alt="" class="gallery__img">
+            <h2 class="gallery__title"></h2>
+        </div>
+        <div class="gallery__item">
+            <img src="galeria5.jpg" alt="" class="gallery__img">
+            <h2 class="gallery__title"></h2>
+        </div>
+        <div class="gallery__item">
+            <img src="galeria6.jpg" alt="" class="gallery__img">
+            <h2 class="gallery__title"></h2>
+        </div>
+        <div class="gallery__item">
+            <img src="galeria7.jpg" alt="" class="gallery__img">
+            <h2 class="gallery__title"></h2>
+        </div>
+        <div class="gallery__item">
+            <img src="galeria8.jpg" alt="" class="gallery__img">
+            <h2 class="gallery__title"></h2>
+        </div>
+        <div class="gallery__item">
+            <img src="galeria9.jpg" alt="" class="gallery__img">
+            <h2 class="gallery__title"></h2>
+        </div>
+    </div>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    margin: 0;
+    font-family: monospace;
+}
+
+h1 {
+    color: #444;
+    text-align: center;
+}
+
+/* Estilos de la galería */
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.gallery__item {
+    position: relative;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__title {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    /* background: linear-gradient(white, black); */
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+/* select images */
+.gallery__item:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+.gallery__item:nth-child(5) {
+    grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(9) {
+    grid-column-start: span 2;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media (min-width:768px) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery__item:nth-child(3) {
+        grid-column-start: span 2;
+    }
+
+    .gallery__item:nth-child(4) {
+        grid-column-start: span 3;
+    }
+
+    .gallery__item:nth-child(5) {
+        grid-row-start: span 3;
+    }
+
+    .gallery__item:nth-child(9) {
+        grid-column-start: span 3;
+    }
+}
+
+/* WEB */
+@media (min-width:1024px) {
+    .gallery-container {
+        grid-template-columns: repeat(5, 1fr);
+        width: 90%;
+        margin: auto;
+    }
+
+    .gallery__item:nth-child(1) {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+
+    .gallery__item:nth-child(4) {
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+    }
+    
+}
+    </style>
+    <!-- ------- Footer -------  -->
+
+ <section class="footer">
+    <h4>About us</h4>
+    <p>
+        GMDC-PULWARA is one of the best college in Lalitpur, Uttar Pradesh.
+    </p>
+    <div class="icons">
+        <a class="plain-link" href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+        <a class="plain-link" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+        <a class="plain-link" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        <a class="plain-link" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+    </div>
+    <p>
+        Made by GMDC-PULWARA
+        <br>
+        Copyright © 2024 | All Rights Reserved. <br>
+            <a class="plain-link icons-blue" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+            <a class="plain-link icons-blue" href="https://github.com"><i class="fa fa-github"></i></a>
+            <a class="plain-link icons-blue" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+            <a class="plain-link icons-blue" href="mailto:gmcpulwara@gmail.com"><i class="fa fa-at"></i></a>
+    </p>
+</section>
+
+<!-- -------------JavaScript for toggle menu------------ -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+
+</html>
